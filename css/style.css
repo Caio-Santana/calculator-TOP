@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: grey;
+}
+
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 50px 10px;
+}
+
+.btn-padrao {
+  background-color: rgb(200, 202, 204);
+  box-shadow: 1px 1px 1px 1;
+  width: 45px;
+  height: 45px;
+}
+
+.btn-duplo-horizontal {
+  background-color: rgb(200, 202, 204);
+  width: 90px;
+  height: 45px;
+}
+
+.btn-duplo-vertical {
+  width: 45px;
+  height: 90px;
+}
+
+#calculator {
+  align-items: center;
+  background-color: rgb(207, 211, 214);
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px 1px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-evenly;
+  width: 250px;
+}
+
+#calc-display {
+  background-color: rgb(238, 238, 238);
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 0px;
+  height: 100px;
+  width: 240px;
+}
+
+#calc-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 240px;
+}
+
+#numpad {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 1;
+  height: 300px;
+  width: 140px;
+  align-content: flex-start;
+}
+
+#operations {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+
+#extras {
+  display: flex;
+  flex-direction: column;
+}
+
+#btn-clear {
+  background-color: rgb(224, 66, 66);
+  color: rgb(226, 224, 224);
+}
+
+#btn-equals {
+  background-color: rgb(40, 170, 245);
+  color: rgb(226, 224, 224);
+}
