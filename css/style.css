@@ -1,3 +1,15 @@
+:root {
+  --standard-btn-bg-color: rgb(200, 202, 204);
+  --clear-btn-bg-color: rgb(224, 66, 66);
+  --equals-btn-bg-color: rgb(40, 170, 245);
+  --calculator-bg-color: rgb(207, 211, 214);
+
+  --dark-standard-btn-bg-color: rgb(157, 157, 158);
+  --dark-clear-btn-bg-color: rgb(209, 95, 1);
+  --dark-equals-btn-bg-color: rgb(77, 77, 77);
+  --dark-calculator-bg-color: rgb(117, 117, 117);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,27 +34,46 @@ button {
   padding: 50px 10px;
 }
 
-.btn-padrao {
-  background-color: rgb(200, 202, 204);
+.dark-mode {
+  --standard-btn-bg-color: var(--dark-standard-btn-bg-color);
+  --clear-btn-bg-color: var(--dark-clear-btn-bg-color);
+  --equals-btn-bg-color: var(--dark-equals-btn-bg-color);
+  --calculator-bg-color: var(--dark-calculator-bg-color);
+}
+
+.toggle-mode {
+  align-self: flex-end;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 2px;
+}
+
+.toggle-mode:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+.btn-standard {
+  background-color: var(--standard-btn-bg-color);
   box-shadow: 1px 1px 1px 1;
   width: 45px;
   height: 45px;
 }
 
-.btn-duplo-horizontal {
-  background-color: rgb(200, 202, 204);
+.btn-large-horizontal {
+  background-color: var(--standard-btn-bg-color);
   width: 90px;
   height: 45px;
 }
 
-.btn-duplo-vertical {
+.btn-large-vertical {
   width: 45px;
   height: 90px;
 }
 
 #calculator {
   align-items: center;
-  background-color: rgb(207, 211, 214);
+  background-color: var(--calculator-bg-color);
   border-radius: 10px;
   box-shadow: 1px 1px 8px 1px;
   display: flex;
@@ -89,11 +120,11 @@ button {
 }
 
 #btn-clear {
-  background-color: rgb(224, 66, 66);
+  background-color: var(--clear-btn-bg-color);
   color: rgb(226, 224, 224);
 }
 
 #btn-equals {
-  background-color: rgb(40, 170, 245);
+  background-color: var(--equals-btn-bg-color);
   color: rgb(226, 224, 224);
 }
